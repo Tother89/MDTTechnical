@@ -31,7 +31,15 @@ namespace MyApp // Note: actual namespace depends on the project name.
 
                 if (processor != null)
                 {
-                    await processor.ProcessData();
+                    var results = await processor.ProcessData();
+
+                    if (results == null)
+                    {
+                        Console.WriteLine("Unable to process data");
+                        return;
+                    }                       
+
+                    await Task.WhenAll(results);
                 }
             }
         }

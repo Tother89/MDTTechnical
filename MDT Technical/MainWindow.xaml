@@ -12,7 +12,7 @@
     </Window.Resources>
     <StackPanel>
         <TextBlock x:Name="StatusLabel" Text="{Binding Status}" Margin="10,10,0,30" />
-        <ListView ItemsSource="{Binding Datasets}" Width="Auto">
+        <ListView ItemsSource="{Binding Datasets}" Width="Auto" MaxHeight="200">
             <ListView.View>
                 <GridView>
                     <GridViewColumn Header="Data" Width="Auto">
@@ -37,7 +37,7 @@
             </ListView.View>
         </ListView>
 
-        <ListView ItemsSource="{Binding Generators}">
+        <ListView ItemsSource="{Binding Generators}" MaxHeight="400">
             <ListView.View>
                 <GridView AllowsColumnReorder="True" ColumnHeaderToolTip="Generator Information">
                     <GridViewColumn Header="Name" Width="100">
@@ -57,16 +57,15 @@
                     <GridViewColumn Header="Operation" Width="100">
                         <GridViewColumn.CellTemplate>
                             <DataTemplate>
-                                <!--<ComboBox ItemsSource="{Binding Operations}" 
-                                          SelectedItem="{Binding SelectedOperation}" Width="80"/>-->
-                                <TextBlock Text="{Binding Operation}" />
+                                <ComboBox ItemsSource="{Binding Options}" 
+                                          SelectedItem="{Binding SelectedOperation}" Width="80"/>
                             </DataTemplate>
                         </GridViewColumn.CellTemplate>
                     </GridViewColumn>
                     <GridViewColumn Header="Output" Width="400">
                         <GridViewColumn.CellTemplate>
                             <DataTemplate>
-                                <TextBlock  Text="{Binding ResultMessage}"/>
+                                <TextBlock Text="{Binding ResultMessage}" Foreground="Green"/>
                             </DataTemplate>
                         </GridViewColumn.CellTemplate>
                     </GridViewColumn>
@@ -76,10 +75,9 @@
 
         <DockPanel HorizontalAlignment="Stretch" LastChildFill="False" Margin="0,20,15,15">
             <Button DockPanel.Dock="Left" Padding="5" Margin="15,0,0,0" x:Name="UploadButton" Content="Load" Command="{Binding LoadFileCommand}" />
+            <TextBlock DockPanel.Dock="Left" Margin="15,5,0,0" Text="{Binding FileName}" />
             <Button DockPanel.Dock="Right" Padding="5"  x:Name="ActivateButton" Content="Activate" Command="{Binding ActivateCommand}" />
         </DockPanel>
-            
-        
         
     </StackPanel>
     

@@ -27,6 +27,18 @@ namespace MDT_Technical
                 _status = value;
                 OnPropertyChanged(nameof(Status));
             }
+        }   
+        
+        private string? _fileName;
+        public string? FileName { get
+            {
+                return _fileName;
+            }
+            set
+            {
+                _fileName = value;
+                OnPropertyChanged(nameof(FileName));
+            }
         }     
 
         private ObservableCollection<Generators>? _generators;
@@ -51,30 +63,19 @@ namespace MDT_Technical
             }
         }
 
-        private DataProcessor? Processor { get; set; }
-
-        public ObservableCollection<string> Operations { get; } = new ObservableCollection<string> 
-        { "Sum", "Min", "Max", "Average" };
-
-        private string _selectedOperation;
-        public string SelectedOperation
-        {
-            get { return _selectedOperation; }
-            set
-            {
-                _selectedOperation = value;
-                OnPropertyChanged(nameof(SelectedOperation));
-            }
-        }
+        private DataProcessor? Processor { get; set; }       
 
         public ICommand LoadFileCommand { get; }
         public ICommand ActivateCommand { get; }
+        public ICommand AddDataCommand { get; }
 
         public MainPageViewModel()
         {
             this.LoadFileCommand = new RelayCommand(Load);
             this.ActivateCommand = new RelayCommand(Activate);
+            this.AddDataCommand = new RelayCommand(IncreaseDataSize);
             this.Status = "New module started. Please load a file.";
+            this.FileName = "--Select file--";
         }       
 
         private void Load()
@@ -110,6 +111,7 @@ namespace MDT_Technical
                     }
 
                     this.Status = "File loaded";
+                    this.FileName = fileName;
                 }
                 catch (Exception ex)
                 {
@@ -120,6 +122,7 @@ namespace MDT_Technical
 
         public async void Activate()
         {
+            this.Status = "Running generators with current dataset";
             if (this.Processor == null)
                 return;
 
@@ -128,9 +131,13 @@ namespace MDT_Technical
             if (actions == null)
                 return;
 
-
-
             await Task.WhenAll(actions);
+            this.Status = "Task complete";
+        }
+
+        public void IncreaseDataSize()
+        {
+
         }
     }
 }

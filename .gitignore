@@ -186,6 +186,8 @@ FakesAssemblies/
 
 git_stats/*
 
+*.vsidx
+
 *.ncrunchproject
 StyleCop.Cache
 bin

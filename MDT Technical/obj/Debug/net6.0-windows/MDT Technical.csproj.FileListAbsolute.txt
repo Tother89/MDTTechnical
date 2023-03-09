@@ -1,0 +1,34 @@
+C:\Users\tothd\source\repos\MDT Technical\MDT Technical\obj\Debug\net6.0-windows\MDT Technical.csproj.AssemblyReference.cache
+C:\Users\tothd\source\repos\MDT Technical\MDT Technical\obj\Debug\net6.0-windows\Control\CustomTextBox.g.cs
+C:\Users\tothd\source\repos\MDT Technical\MDT Technical\obj\Debug\net6.0-windows\MainWindow.g.cs
+C:\Users\tothd\source\repos\MDT Technical\MDT Technical\obj\Debug\net6.0-windows\App.g.cs
+C:\Users\tothd\source\repos\MDT Technical\MDT Technical\obj\Debug\net6.0-windows\GeneratedInternalTypeHelper.g.cs
+C:\Users\tothd\source\repos\MDT Technical\MDT Technical\obj\Debug\net6.0-windows\MDT Technical_MarkupCompile.cache
+C:\Users\tothd\source\repos\MDT Technical\MDT Technical\obj\Debug\net6.0-windows\MDT Technical_MarkupCompile.lref
+C:\Users\tothd\source\repos\MDT Technical\MDT Technical\obj\Debug\net6.0-windows\App.baml
+C:\Users\tothd\source\repos\MDT Technical\MDT Technical\obj\Debug\net6.0-windows\Control\CustomTextBox.baml
+C:\Users\tothd\source\repos\MDT Technical\MDT Technical\obj\Debug\net6.0-windows\MDT Technical.dll
+C:\Users\tothd\source\repos\MDT Technical\MDT Technical\obj\Debug\net6.0-windows\refint\MDT Technical.dll
+C:\Users\tothd\source\repos\MDT Technical\MDT Technical\obj\Debug\net6.0-windows\MDT Technical.pdb
+C:\Users\tothd\source\repos\MDT Technical\MDT Technical\bin\Debug\net6.0-windows\Generator Console.deps.json
+C:\Users\tothd\source\repos\MDT Technical\MDT Technical\bin\Debug\net6.0-windows\Generator Console.runtimeconfig.json
+C:\Users\tothd\source\repos\MDT Technical\MDT Technical\bin\Debug\net6.0-windows\data.json
+C:\Users\tothd\source\repos\MDT Technical\MDT Technical\bin\Debug\net6.0-windows\Generator Console.exe
+C:\Users\tothd\source\repos\MDT Technical\MDT Technical\bin\Debug\net6.0-windows\MDT Technical.exe
+C:\Users\tothd\source\repos\MDT Technical\MDT Technical\bin\Debug\net6.0-windows\MDT Technical.deps.json
+C:\Users\tothd\source\repos\MDT Technical\MDT Technical\bin\Debug\net6.0-windows\MDT Technical.runtimeconfig.json
+C:\Users\tothd\source\repos\MDT Technical\MDT Technical\bin\Debug\net6.0-windows\MDT Technical.dll
+C:\Users\tothd\source\repos\MDT Technical\MDT Technical\bin\Debug\net6.0-windows\MDT Technical.pdb
+C:\Users\tothd\source\repos\MDT Technical\MDT Technical\bin\Debug\net6.0-windows\CommunityToolkit.Mvvm.dll
+C:\Users\tothd\source\repos\MDT Technical\MDT Technical\bin\Debug\net6.0-windows\Newtonsoft.Json.dll
+C:\Users\tothd\source\repos\MDT Technical\MDT Technical\bin\Debug\net6.0-windows\Generator Console.dll
+C:\Users\tothd\source\repos\MDT Technical\MDT Technical\bin\Debug\net6.0-windows\Generator Console.pdb
+C:\Users\tothd\source\repos\MDT Technical\MDT Technical\obj\Debug\net6.0-windows\MainWindow.baml
+C:\Users\tothd\source\repos\MDT Technical\MDT Technical\obj\Debug\net6.0-windows\MDT Technical.g.resources
+C:\Users\tothd\source\repos\MDT Technical\MDT Technical\obj\Debug\net6.0-windows\MDT Technical.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\tothd\source\repos\MDT Technical\MDT Technical\obj\Debug\net6.0-windows\MDT Technical.AssemblyInfoInputs.cache
+C:\Users\tothd\source\repos\MDT Technical\MDT Technical\obj\Debug\net6.0-windows\MDT Technical.AssemblyInfo.cs
+C:\Users\tothd\source\repos\MDT Technical\MDT Technical\obj\Debug\net6.0-windows\MDT Technical.csproj.CoreCompileInputs.cache
+C:\Users\tothd\source\repos\MDT Technical\MDT Technical\obj\Debug\net6.0-windows\MDT Technical.csproj.CopyComplete
+C:\Users\tothd\source\repos\MDT Technical\MDT Technical\obj\Debug\net6.0-windows\MDT Technical.genruntimeconfig.cache
+C:\Users\tothd\source\repos\MDT Technical\MDT Technical\obj\Debug\net6.0-windows\ref\MDT Technical.dll

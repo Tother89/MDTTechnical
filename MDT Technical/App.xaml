@@ -1,0 +1,9 @@
+﻿<Application x:Class="MDT_Technical.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:MDT_Technical"
+             StartupUri="MainWindow.xaml">
+    <Application.Resources>
+        <local:MainPageViewModel x:Key="MainPageViewModel"/>
+    </Application.Resources>
+</Application>

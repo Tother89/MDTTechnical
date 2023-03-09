@@ -1,0 +1,18 @@
+C:\Users\tothd\source\repos\MDT Technical\Generator Console\bin\Debug\net6.0\data.json
+C:\Users\tothd\source\repos\MDT Technical\Generator Console\bin\Debug\net6.0\Generator Console.exe
+C:\Users\tothd\source\repos\MDT Technical\Generator Console\bin\Debug\net6.0\Generator Console.deps.json
+C:\Users\tothd\source\repos\MDT Technical\Generator Console\bin\Debug\net6.0\Generator Console.runtimeconfig.json
+C:\Users\tothd\source\repos\MDT Technical\Generator Console\bin\Debug\net6.0\Generator Console.dll
+C:\Users\tothd\source\repos\MDT Technical\Generator Console\bin\Debug\net6.0\Generator Console.pdb
+C:\Users\tothd\source\repos\MDT Technical\Generator Console\bin\Debug\net6.0\Newtonsoft.Json.dll
+C:\Users\tothd\source\repos\MDT Technical\Generator Console\obj\Debug\net6.0\Generator Console.csproj.AssemblyReference.cache
+C:\Users\tothd\source\repos\MDT Technical\Generator Console\obj\Debug\net6.0\Generator Console.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\tothd\source\repos\MDT Technical\Generator Console\obj\Debug\net6.0\Generator Console.AssemblyInfoInputs.cache
+C:\Users\tothd\source\repos\MDT Technical\Generator Console\obj\Debug\net6.0\Generator Console.AssemblyInfo.cs
+C:\Users\tothd\source\repos\MDT Technical\Generator Console\obj\Debug\net6.0\Generator Console.csproj.CoreCompileInputs.cache
+C:\Users\tothd\source\repos\MDT Technical\Generator Console\obj\Debug\net6.0\Generator Console.csproj.CopyComplete
+C:\Users\tothd\source\repos\MDT Technical\Generator Console\obj\Debug\net6.0\Generator Console.dll
+C:\Users\tothd\source\repos\MDT Technical\Generator Console\obj\Debug\net6.0\refint\Generator Console.dll
+C:\Users\tothd\source\repos\MDT Technical\Generator Console\obj\Debug\net6.0\Generator Console.pdb
+C:\Users\tothd\source\repos\MDT Technical\Generator Console\obj\Debug\net6.0\Generator Console.genruntimeconfig.cache
+C:\Users\tothd\source\repos\MDT Technical\Generator Console\obj\Debug\net6.0\ref\Generator Console.dll

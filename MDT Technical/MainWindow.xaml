@@ -1,0 +1,86 @@
+﻿<Window x:Class="MDT_Technical.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MDT_Technical"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800"
+        DataContext="{StaticResource MainPageViewModel}">
+    <Window.Resources>
+        <local:MainPageViewModel x:Key="MainPageViewModel" />
+    </Window.Resources>
+    <StackPanel>
+        <TextBlock x:Name="StatusLabel" Text="{Binding Status}" Margin="10,10,0,30" />
+        <ListView ItemsSource="{Binding Datasets}" Width="Auto">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn Header="Data" Width="Auto">
+                        <GridViewColumn.CellTemplate>
+                            <DataTemplate>
+                                <ItemsControl ItemsSource="{Binding}" Width="Auto">
+                                    <ItemsControl.ItemTemplate>
+                                        <DataTemplate>
+                                            <TextBox Text="{Binding Path=.}" Margin="5,0,5,0" Width="40" />
+                                        </DataTemplate>
+                                    </ItemsControl.ItemTemplate>
+                                    <ItemsControl.ItemsPanel>
+                                        <ItemsPanelTemplate>
+                                            <StackPanel Orientation="Horizontal" />
+                                        </ItemsPanelTemplate>
+                                    </ItemsControl.ItemsPanel>
+                                </ItemsControl>
+                            </DataTemplate>
+                        </GridViewColumn.CellTemplate>
+                    </GridViewColumn>
+                </GridView>
+            </ListView.View>
+        </ListView>
+
+        <ListView ItemsSource="{Binding Generators}">
+            <ListView.View>
+                <GridView AllowsColumnReorder="True" ColumnHeaderToolTip="Generator Information">
+                    <GridViewColumn Header="Name" Width="100">
+                        <GridViewColumn.CellTemplate>
+                            <DataTemplate>
+                                <TextBox Text="{Binding Name, UpdateSourceTrigger=LostFocus, Mode=TwoWay}" Width="80"/>
+                            </DataTemplate>
+                        </GridViewColumn.CellTemplate>
+                    </GridViewColumn >
+                    <GridViewColumn Header="Interval" Width="100">
+                        <GridViewColumn.CellTemplate>
+                            <DataTemplate>
+                                <TextBox Text="{Binding Interval, UpdateSourceTrigger=LostFocus, Mode=TwoWay}" Width="80"/>
+                            </DataTemplate>
+                        </GridViewColumn.CellTemplate>
+                    </GridViewColumn >
+                    <GridViewColumn Header="Operation" Width="100">
+                        <GridViewColumn.CellTemplate>
+                            <DataTemplate>
+                                <!--<ComboBox ItemsSource="{Binding Operations}" 
+                                          SelectedItem="{Binding SelectedOperation}" Width="80"/>-->
+                                <TextBlock Text="{Binding Operation}" />
+                            </DataTemplate>
+                        </GridViewColumn.CellTemplate>
+                    </GridViewColumn>
+                    <GridViewColumn Header="Output" Width="400">
+                        <GridViewColumn.CellTemplate>
+                            <DataTemplate>
+                                <TextBlock  Text="{Binding ResultMessage}"/>
+                            </DataTemplate>
+                        </GridViewColumn.CellTemplate>
+                    </GridViewColumn>
+                </GridView>
+            </ListView.View>
+        </ListView>
+
+        <DockPanel HorizontalAlignment="Stretch" LastChildFill="False" Margin="0,20,15,15">
+            <Button DockPanel.Dock="Left" Padding="5" Margin="15,0,0,0" x:Name="UploadButton" Content="Load" Command="{Binding LoadFileCommand}" />
+            <Button DockPanel.Dock="Right" Padding="5"  x:Name="ActivateButton" Content="Activate" Command="{Binding ActivateCommand}" />
+        </DockPanel>
+            
+        
+        
+    </StackPanel>
+    
+</Window>
